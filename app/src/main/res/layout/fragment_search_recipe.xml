@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editText_recipe" />
+
+    <Space
+        android:layout_below="@id/editText_recipe"
+        android:id="@+id/space1"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/space_between_space"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/space1"
+        android:id="@+id/spinner_search_engine" />
+
+    <Space
+        android:layout_below="@id/spinner_search_engine"
+        android:id="@+id/space2"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/space_between_space"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:layout_below="@+id/space2"
+        android:text="Search"
+        android:id="@+id/button_search_recipe"
+        android:onClick="searchRecipe" />
+
+</RelativeLayout>

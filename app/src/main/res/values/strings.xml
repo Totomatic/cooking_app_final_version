@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Bear Grill</string>
+    <string name="action_create_order">Create Order</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="title_top">Top Fragment</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string-array name="items">
+        <item>Diavolo</item>
+        <item>Funghi</item>
+        <item>Salad</item>
+    </string-array>
+    <string-array name="pastas">
+        <item>Spaghetti Bolognese</item>
+        <item>Lasagne</item>
+    </string-array>
+    <string-array name="stores">
+        <item>Cambridge</item>
+        <item>Sebastapol</item>
+    </string-array>
+
+    // all title of hamburger menu
+    <string-array name="titles">
+        <item>Home</item>
+        <item>Items</item>
+        <item>Pasta</item>
+        <item>Stores</item>
+        <item>CIS</item>
+        <item>CS</item>
+    </string-array>
+
+    <string-array name="weightUnits">
+        <item>kilograms</item>
+        <item>grams</item>
+        <item>ounce</item>
+        <item>pound</item>
+    </string-array>
+
+    <string-array name="volumeUnits">
+        <item>liter</item>
+        <item> milliliter</item>
+    </string-array>
+
+    <array name="website">
+        <item>marmiton.org</item>
+        <item>recipe.com</item>
+        <item>allrecipes.com</item>
+    </array>
+
+    <string-array name="cupUnits">
+        <item>flour in grams</item>
+        <item>sugar in grams</item>
+        <item>flour in cup</item>
+        <item>sugar in cup</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_item_detail">Item Detail</string>
+    <string name="welcome_text">Here are just a few of our featured items</string>
+
+
+</resources>
