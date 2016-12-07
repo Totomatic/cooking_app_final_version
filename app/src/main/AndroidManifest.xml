@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gpcorser.bitsandpizzas">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:debuggable="true"
@@ -33,6 +35,9 @@
             android:label="webwiever"
             android:parentActivityName=".MainActivity" />
 
+        <service
+            android:name=".CookNotificationService"
+            android:exported="false"></service>
     </application>
 
 </manifest>

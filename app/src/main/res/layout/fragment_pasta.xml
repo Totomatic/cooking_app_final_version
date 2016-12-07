@@ -10,45 +10,55 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.gpcorser.bitsandpizzas.MainActivity">
 
-    <EditText
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/minutesValue"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
 
-    <Space
-        android:layout_below="@id/minutesValue"
-        android:id="@+id/space2"
-        android:layout_width="1dp"
-        android:layout_height="@dimen/space_between_space"/>
+        <EditText
+            android:id="@+id/edtTimerValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="minutes"
+            android:inputType="phone" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="14dp"
-        android:layout_below="@+id/space2"
-        android:text="Start Timer"
-        android:id="@+id/button_start_timer"
-        android:onClick="startTimer" />
+        <Button
+            android:id="@+id/btnStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Start Timer" />
 
-    <Space
-        android:layout_below="@id/button_start_timer"
-        android:id="@+id/space3"
-        android:layout_width="1dp"
-        android:layout_height="@dimen/space_between_space"/>
+        <Button
+            android:id="@+id/btnStopTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Stop Timer"
+            android:visibility="gone" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="14dp"
-        android:layout_below="@+id/space3"
-        android:text="Stop Timer"
-        android:id="@+id/button_stop_timer"
-        android:onClick="stopTimer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTimeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
 
 </RelativeLayout>

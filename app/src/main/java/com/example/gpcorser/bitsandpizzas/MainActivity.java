@@ -135,7 +135,7 @@ public class MainActivity extends Activity {
         switch(position) {
             case 1:
                 // fragment = new Fragment;
-                fragment = new ItemMaterialFragment();
+                fragment = new TopFragment();
                 break;
             case 2:
                 fragment = new PastaFragment();
@@ -144,7 +144,7 @@ public class MainActivity extends Activity {
                 fragment = new SearchRecipeFragment();
                 break;
             default:
-                fragment = new TopFragment();
+                fragment = new FirstPage();
                 break;
         }
         FragmentTransaction ft = getFragmentManager().beginTransaction();

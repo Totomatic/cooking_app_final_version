@@ -14,7 +14,13 @@ public class ConversionTools {
         POUND,
         //volume
         LITER,
-        MILLILITER;
+        MILLILITER,
+        //cup
+        FLOUR_IN_GRAMS,
+        FLOUR_IN_CUP,
+        BUTTER_IN_GRAMS,
+        BUTTER_IN_CUP;
+
 
 
         // Helper method to convert text to one of the above constants
@@ -84,6 +90,25 @@ public class ConversionTools {
                     constant = 0.001;
                 }
                 break;
+
+            //cup part
+            case FLOUR_IN_GRAMS:
+                if (to == Unit.FLOUR_IN_CUP){
+                    constant = 1.0/120.0 ;
+                }
+                break;
+            case FLOUR_IN_CUP:
+                if (to == Unit.FLOUR_IN_GRAMS)
+                    constant = 120.0;
+
+            case BUTTER_IN_GRAMS:
+                if (to == Unit.BUTTER_IN_CUP){
+                    constant = 1.0/226.8 ;
+                }
+                break;
+            case BUTTER_IN_CUP:
+                if (to == Unit.BUTTER_IN_GRAMS)
+                    constant = 226.8;
         }
 
         multiplier = constant;

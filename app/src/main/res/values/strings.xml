@@ -24,11 +24,9 @@
     // all title of hamburger menu
     <string-array name="titles">
         <item>Home</item>
-        <item>Items</item>
-        <item>Pasta</item>
-        <item>Stores</item>
-        <item>CIS</item>
-        <item>CS</item>
+        <item>Converter</item>
+        <item>Timer</item>
+        <item>Search Recipe</item>
     </string-array>
 
     <string-array name="weightUnits">
@@ -50,10 +48,10 @@
     </array>
 
     <string-array name="cupUnits">
-        <item>flour in grams</item>
-        <item>sugar in grams</item>
-        <item>flour in cup</item>
-        <item>sugar in cup</item>
+        <item>flour_in_grams</item>
+        <item>sugar_in_grams</item>
+        <item>flour_in_cup</item>
+        <item>sugar_in_cup</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
